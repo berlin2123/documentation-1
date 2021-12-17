@@ -67,6 +67,9 @@ System values are saved in the :file:`config/config.php` and allow the app to mo
             return $this->config->getSystemValue($key);
         }
 
+        /*
+         * @throws HintException
+         */
         public function setSystemValue($key, $value) {
             $this->config->setSystemValue($key, $value);
         }
